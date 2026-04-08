@@ -1,0 +1,12 @@
+{
+  "name": "sids-destination",
+  "version": "1.0.0",
+  "description": "Sid's Destination Website",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "express": "^4.18.2"
+  }
+}
