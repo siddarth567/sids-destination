@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sid's Destination — Travel, Culture & Exploration</title>
+  <meta name="description" content="Welcome to Sid's Destination — a YouTube channel by Siddartha K covering travel vlogs, cultural events, and local stories from India. 2.12K subscribers, 74 videos." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800;900&family=Playfair+Display:ital,wght@0,600;1,500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- ===== NAVBAR ===== -->
+  <nav id="navbar">
+    <div class="nav-inner">
+      <a href="#home" class="logo" id="nav-logo">
+        <img src="logo.jpg" alt="Sid's Destination Logo" class="logo-img">
+      </a>
+      <ul class="nav-links" id="nav-links">
+        <li><a href="#home" class="nav-link active">Home</a></li>
+        <li><a href="#about" class="nav-link">About</a></li>
+        <li><a href="#videos" class="nav-link">Videos</a></li>
+        <li><a href="#destinations" class="nav-link">Destinations</a></li>
+        <li><a href="#contact" class="nav-link">Contact</a></li>
+      </ul>
+      <a href="https://www.youtube.com/@sidsdestination?sub_confirmation=1" target="_blank" rel="noopener" class="btn-subscribe" id="nav-subscribe-btn">
+        <svg viewBox="0 0 24 24" fill="currentColor" width="18" height="18"><path d="M10 15l5.19-3L10 9v6zm11.56-7.83c.13.47.22 1.1.28 1.9.07.8.1 1.49.1 2.09L22 12c0 2.19-.16 3.8-.44 4.83-.25.9-.83 1.48-1.73 1.73-.47.13-1.33.22-2.65.28-1.3.07-2.49.1-3.59.1L12 19c-4.19 0-6.8-.16-7.83-.44-.9-.25-1.48-.83-1.73-1.73-.13-.47-.22-1.1-.28-1.9-.07-.8-.1-1.49-.1-2.09L2 12c0-2.19.16-3.8.44-4.83.25-.9.83-1.48 1.73-1.73.47-.13 1.33-.22 2.65-.28 1.3-.07 2.49-.1 3.59-.1L12 5c4.19 0 6.8.16 7.83.44.9.25 1.48.83 1.73 1.73z"/></svg>
+        Subscribe
+      </a>
+      <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- ===== HERO ===== -->
+  <section class="hero" id="home">
+    <div class="hero-bg">
+      <img src="hero.png" alt="Scenic misty mountains of South India" class="hero-img" id="hero-bg-img" />
+      <div class="hero-overlay"></div>
+    </div>
+    <div class="hero-content">
+      <div class="hero-badge" id="hero-badge">
+        <span class="pulse-dot"></span>
+        New video every Sunday @ 5PM
+      </div>
+      <h1 class="hero-title" id="hero-title">
+        Explore with<br/>
+        <span class="gradient-text">Sid's Destination</span>
+      </h1>
+      <p class="hero-subtitle" id="hero-subtitle">
+        Travel vlogs · Local culture · Hidden gems of India
+      </p>
+      <div class="hero-stats" id="hero-stats">
+        <div class="stat">
+          <span class="stat-num">2.12K</span>
+          <span class="stat-label">Subscribers</span>
+        </div>
+        <div class="stat-sep"></div>
+        <div class="stat">
+          <span class="stat-num">74</span>
+          <span class="stat-label">Videos</span>
+        </div>
+        <div class="stat-sep"></div>
+        <div class="stat">
+          <span class="stat-num">461K+</span>
+          <span class="stat-label">Views</span>
+        </div>
+      </div>
+      <div class="hero-cta" id="hero-cta">
+        <a href="https://www.youtube.com/@sidsdestination/videos" target="_blank" rel="noopener" class="btn-primary" id="hero-yt-btn">
+          <svg viewBox="0 0 24 24" fill="currentColor" width="20" height="20"><path d="M10 15l5.19-3L10 9v6zm11.56-7.83c.13.47.22 1.1.28 1.9.07.8.1 1.49.1 2.09L22 12c0 2.19-.16 3.8-.44 4.83-.25.9-.83 1.48-1.73 1.73-.47.13-1.33.22-2.65.28-1.3.07-2.49.1-3.59.1L12 19c-4.19 0-6.8-.16-7.83-.44-.9-.25-1.48-.83-1.73-1.73-.13-.47-.22-1.1-.28-1.9-.07-.8-.1-1.49-.1-2.09L2 12c0-2.19.16-3.8.44-4.83.25-.9.83-1.48 1.73-1.73.47-.13 1.33-.22-2.65.28 1.3-.07 2.49-.1 3.59-.1L12 5c4.19 0 6.8.16 7.83.44.9.25 1.48.83 1.73 1.73z"/></svg>
+          Watch on YouTube
+        </a>
+        <a href="#about" class="btn-secondary" id="hero-about-btn">Explore More ↓</a>
+      </div>
+    </div>
+    <div class="hero-scroll-hint">
+      <div class="scroll-wheel"></div>
+    </div>
+  </section>
+
+  <!-- ===== ABOUT ===== -->
+  <section class="about" id="about">
+    <div class="container">
+      <div class="about-grid">
+        <div class="about-visual" id="about-visual">
+          <div class="avatar-wrap">
+            <div class="avatar" id="about-avatar">
+              <img src="logo.jpg" alt="Sid's Destination" class="about-avatar-img">
+            </div>
+            <div class="avatar-ring"></div>
+          </div>
+          <div class="about-card" id="about-card">
+            <div class="card-icon">📍</div>
+            <div>
+              <div class="card-title">Based in</div>
+              <div class="card-value">Chitradurga, India</div>
+            </div>
+          </div>
+          <div class="about-card card-2" id="about-card-2">
+            <div class="card-icon">🎬</div>
+            <div>
+              <div class="card-title">Since</div>
+              <div class="card-value">January 2014</div>
+            </div>
+          </div>
+        </div>
+        <div class="about-text" id="about-text">
+          <div class="section-label">About the Channel</div>
+          <h2 class="section-title">Stories worth<br/><em>exploring</em></h2>
+          <p>Hi, I'm <strong>Siddartha K</strong> — a passionate traveller and storyteller from Chitradurga, Karnataka. Through <em>Sid's Destination</em>, I document my journeys across India's most beautiful landscapes, cultural festivals, and hidden local wonders.</p>
+          <p>From the misty hills of <strong>Ooty</strong> to river rafting in <strong>Dandeli</strong>, the roaring waters of <strong>Jog Falls</strong> to the vibrant festivals of Chitradurga — every video is a new adventure waiting for you.</p>
+          <div class="about-tags" id="about-tags">
+            <span class="tag">✈️ Travel Vlogs</span>
+            <span class="tag">🏔️ Nature</span>
+            <span class="tag">🎉 Local Events</span>
+            <span class="tag">🏍️ Road Trips</span>
+            <span class="tag">🌿 Lifestyle</span>
+          </div>
+          <a href="https://www.instagram.com/siddharth_sid567/" target="_blank" rel="noopener" class="btn-outline" id="about-ig-btn">Follow on Instagram →</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== VIDEOS ===== -->
+  <section class="videos-section" id="videos">
+    <div class="container">
+      <div class="section-header">
+        <div class="section-label">Latest Content</div>
+        <h2 class="section-title">Featured Videos</h2>
+        <p class="section-sub">Handpicked adventures from the channel</p>
+      </div>
+      <div class="videos-grid" id="videos-grid">
+
+        <div class="video-card" id="video-card-1" onclick="window.open('https://www.youtube.com/watch?v=sWoaHDscVgg','_blank')" style="cursor:pointer;">
+          <div class="video-thumb" style="background: linear-gradient(135deg, #1a472a 0%, #2d6a4f 50%, #52b788 100%);">
+            <div class="play-btn" id="play-btn-1">▶</div>
+            <div class="video-category">Festival</div>
+            <div class="video-emoji">🛕</div>
+          </div>
+          <div class="video-info">
+            <h3 class="video-title">Hindu Maha Ganapathi Chitradurga Visarjane 2025</h3>
+            <p class="video-desc">A spectacular celebration of the beloved Ganapathi festival with massive processions across Chitradurga.</p>
+            <a href="https://www.youtube.com/watch?v=sWoaHDscVgg" target="_blank" class="watch-link" id="watch-link-1">Watch Now →</a>
+          </div>
+        </div>
+
+        <div class="video-card featured" id="video-card-2" onclick="window.open('https://www.youtube.com/watch?v=FcnN7JirzmM','_blank')" style="cursor:pointer;">
+          <div class="video-thumb" style="background: linear-gradient(135deg, #023e8a 0%, #0077b6 50%, #00b4d8 100%);">
+            <div class="play-btn" id="play-btn-2">▶</div>
+            <div class="video-category featured-tag">⭐ Popular</div>
+            <div class="video-emoji">🌊</div>
+          </div>
+          <div class="video-info">
+            <h3 class="video-title">Dandeli River Rafting in Kali River</h3>
+            <p class="video-desc">Experience the thrill of white-water rafting through the stunning Kali River gorges in Dandeli Wildlife Sanctuary.</p>
+            <a href="https://www.youtube.com/watch?v=FcnN7JirzmM" target="_blank" class="watch-link" id="watch-link-2">Watch Now →</a>
+          </div>
+        </div>
+
+        <div class="video-card" id="video-card-3" onclick="window.open('https://www.youtube.com/watch?v=OFufHQCDG1c','_blank')" style="cursor:pointer;">
+          <div class="video-thumb" style="background: linear-gradient(135deg, #4a1942 0%, #9b2226 50%, #e85d04 100%);">
+            <div class="play-btn" id="play-btn-3">▶</div>
+            <div class="video-category">Travel</div>
+            <div class="video-emoji">🏔️</div>
+          </div>
+          <div class="video-info">
+            <h3 class="video-title">3 Days & 2 Nights Plan to Ooty</h3>
+            <p class="video-desc">The perfect Ooty itinerary — tea gardens, Nilgiri mountains, Botanical Garden, and scenic sunset points.</p>
+            <a href="https://www.youtube.com/watch?v=OFufHQCDG1c" target="_blank" class="watch-link" id="watch-link-3">Watch Now →</a>
+          </div>
+        </div>
+
+        <div class="video-card" id="video-card-4" onclick="window.open('https://www.youtube.com/watch?v=BfIEBZ0tQvs','_blank')" style="cursor:pointer;">
+          <div class="video-thumb" style="background: linear-gradient(135deg, #1b4332 0%, #40916c 50%, #95d5b2 100%);">
+            <div class="play-btn" id="play-btn-4">▶</div>
+            <div class="video-category">Nature</div>
+            <div class="video-emoji">💧</div>
+          </div>
+          <div class="video-info">
+            <h3 class="video-title">Jog Falls — India's Mightiest Waterfall</h3>
+            <p class="video-desc">Visit the awe-inspiring Jog Falls in Karnataka — one of the highest plunge waterfalls in all of India.</p>
+            <a href="https://www.youtube.com/watch?v=BfIEBZ0tQvs" target="_blank" class="watch-link" id="watch-link-4">Watch Now →</a>
+          </div>
+        </div>
+
+        <div class="video-card" id="video-card-5" onclick="window.open('https://www.youtube.com/watch?v=cUIZAaO5fEw','_blank')" style="cursor:pointer;">
+          <div class="video-thumb" style="background: linear-gradient(135deg, #370617 0%, #6a040f 50%, #f48c06 100%);">
+            <div class="play-btn" id="play-btn-5">▶</div>
+            <div class="video-category">Road Trip</div>
+            <div class="video-emoji">🏍️</div>
+          </div>
+          <div class="video-info">
+            <h3 class="video-title">Road Trip: Shimoga to Chitradurga</h3>
+            <p class="video-desc">An epic road journey through the heartland of Karnataka — scenic highways, small towns, and amazing food stops.</p>
+            <a href="https://www.youtube.com/watch?v=cUIZAaO5fEw" target="_blank" class="watch-link" id="watch-link-5">Watch Now →</a>
+          </div>
+        </div>
+
+        <div class="video-card" id="video-card-6" onclick="window.open('https://www.youtube.com/watch?v=3by2SZK2IJE','_blank')" style="cursor:pointer;">
+          <div class="video-thumb" style="background: linear-gradient(135deg, #2d6a4f 0%, #52b788 50%, #b7e4c7 100%);">
+            <div class="play-btn" id="play-btn-6">▶</div>
+            <div class="video-category">Lifestyle</div>
+            <div class="video-emoji">🌿</div>
+          </div>
+          <div class="video-info">
+            <h3 class="video-title">Indoor Plants Unboxing — Kyari Plants</h3>
+            <p class="video-desc">A fun unboxing of beautiful indoor plants from Kyari — bringing nature into our homes one plant at a time.</p>
+            <a href="https://www.youtube.com/watch?v=3by2SZK2IJE" target="_blank" class="watch-link" id="watch-link-6">Watch Now →</a>
+          </div>
+        </div>
+
+      </div>
+      <div class="videos-cta">
+        <a href="https://www.youtube.com/@sidsdestination/videos" target="_blank" rel="noopener" class="btn-primary" id="all-videos-btn">See All 74 Videos →</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== DESTINATIONS ===== -->
+  <section class="destinations" id="destinations">
+    <div class="container">
+      <div class="section-header">
+        <div class="section-label">Places Explored</div>
+        <h2 class="section-title">Destinations</h2>
+        <p class="section-sub">Every frame a new story</p>
+      </div>
+      <div class="dest-grid" id="dest-grid">
+        <div class="dest-card" id="dest-ooty" style="--bg: linear-gradient(160deg, #1a472a, #52b788);">
+          <div class="dest-icon">🏔️</div>
+          <div class="dest-name">Ooty</div>
+          <div class="dest-state">Tamil Nadu</div>
+        </div>
+        <div class="dest-card" id="dest-dandeli" style="--bg: linear-gradient(160deg, #023e8a, #00b4d8);">
+          <div class="dest-icon">🌊</div>
+          <div class="dest-name">Dandeli</div>
+          <div class="dest-state">Karnataka</div>
+        </div>
+        <div class="dest-card" id="dest-jog" style="--bg: linear-gradient(160deg, #1b4332, #95d5b2);">
+          <div class="dest-icon">💦</div>
+          <div class="dest-name">Jog Falls</div>
+          <div class="dest-state">Karnataka</div>
+        </div>
+        <div class="dest-card" id="dest-chitradurga" style="--bg: linear-gradient(160deg, #7b2d8b, #e56b6f);">
+          <div class="dest-icon">🏯</div>
+          <div class="dest-name">Chitradurga</div>
+          <div class="dest-state">Karnataka</div>
+        </div>
+        <div class="dest-card" id="dest-shimoga" style="--bg: linear-gradient(160deg, #b5451b, #f4a261);">
+          <div class="dest-icon">🌾</div>
+          <div class="dest-name">Shimoga</div>
+          <div class="dest-state">Karnataka</div>
+        </div>
+        <div class="dest-card" id="dest-more" style="--bg: linear-gradient(160deg, #264653, #2a9d8f);">
+          <div class="dest-icon">🗺️</div>
+          <div class="dest-name">& more...</div>
+          <div class="dest-state">Across India</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== SCHEDULE BANNER ===== -->
+  <section class="schedule-banner" id="schedule">
+    <div class="schedule-inner">
+      <div class="schedule-icon">🎬</div>
+      <div class="schedule-text">
+        <h3>New Video Every Sunday</h3>
+        <p>Don't miss out — subscribe and hit the 🔔 bell!</p>
+      </div>
+      <a href="https://www.youtube.com/@sidsdestination?sub_confirmation=1" target="_blank" rel="noopener" class="btn-white" id="schedule-subscribe-btn">Subscribe Now</a>
+    </div>
+  </section>
+
+  <!-- ===== CONTACT ===== -->
+  <section class="contact" id="contact">
+    <div class="container">
+      <div class="section-header">
+        <div class="section-label">Get in Touch</div>
+        <h2 class="section-title">Let's Connect</h2>
+        <p class="section-sub">Collaborations, suggestions, or just say hello!</p>
+      </div>
+      <div class="contact-grid">
+        <a href="https://www.youtube.com/@sidsdestination?sub_confirmation=1" target="_blank" rel="noopener" class="contact-card" id="contact-yt">
+          <div class="contact-icon yt-icon">
+            <svg viewBox="0 0 24 24" fill="currentColor" width="28" height="28"><path d="M10 15l5.19-3L10 9v6zm11.56-7.83c.13.47.22 1.1.28 1.9.07.8.1 1.49.1 2.09L22 12c0 2.19-.16 3.8-.44 4.83-.25.9-.83 1.48-1.73 1.73-.47.13-1.33.22-2.65.28-1.3.07-2.49.1-3.59.1L12 19c-4.19 0-6.8-.16-7.83-.44-.9-.25-1.48-.83-1.73-1.73-.13-.47-.22-1.1-.28-1.9-.07-.8-.1-1.49-.1-2.09L2 12c0-2.19.16-3.8.44-4.83.25-.9.83-1.48 1.73-1.73.47-.13 1.33-.22-2.65.28 1.3-.07 2.49-.1 3.59-.1L12 5c4.19 0 6.8.16 7.83.44.9.25 1.48.83 1.73 1.73z"/></svg>
+          </div>
+          <div class="contact-label">YouTube</div>
+          <div class="contact-handle">@sidsdestination</div>
+        </a>
+        <a href="https://www.instagram.com/siddharth_sid567/" target="_blank" rel="noopener" class="contact-card" id="contact-ig">
+          <div class="contact-icon ig-icon">
+            <svg viewBox="0 0 24 24" fill="currentColor" width="28" height="28"><path d="M7.75 2h8.5A5.75 5.75 0 0 1 22 7.75v8.5A5.75 5.75 0 0 1 16.25 22h-8.5A5.75 5.75 0 0 1 2 16.25v-8.5A5.75 5.75 0 0 1 7.75 2zm0 1.5A4.25 4.25 0 0 0 3.5 7.75v8.5A4.25 4.25 0 0 0 7.75 20.5h8.5a4.25 4.25 0 0 0 4.25-4.25v-8.5A4.25 4.25 0 0 0 16.25 3.5zm4.25 3a5.5 5.5 0 1 1 0 11 5.5 5.5 0 0 1 0-11zm0 1.5a4 4 0 1 0 0 8 4 4 0 0 0 0-8zm5.75-.75a1 1 0 1 1 0 2 1 1 0 0 1 0-2z"/></svg>
+          </div>
+          <div class="contact-label">Instagram</div>
+          <div class="contact-handle">@Siddharth_sid567</div>
+        </a>
+        <div class="contact-card" id="contact-location">
+          <div class="contact-icon loc-icon">📍</div>
+          <div class="contact-label">Location</div>
+          <div class="contact-handle">Chitradurga, India</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="footer" id="footer">
+    <div class="footer-inner">
+      <div class="footer-logo">
+        <img src="logo.jpg" alt="Sid's Destination Logo" class="logo-img footer-logo-img">
+      </div>
+      <p class="footer-tagline">Every journey begins with a single step. 🌍</p>
+      <div class="footer-links">
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#videos">Videos</a>
+        <a href="#destinations">Destinations</a>
+        <a href="https://www.youtube.com/@sidsdestination" target="_blank">YouTube</a>
+      </div>
+      <p class="footer-copy">© 2025 Sid's Destination · Made with ❤️ for Siddartha K</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
