@@ -97,3 +97,50 @@ Exited
 Start it:
 
 (docker start jenkins)
+
+✅ step 11- Jenkins Pipeline Script
+
+In Jenkins:
+
+New Item
+→ Pipeline
+→ Pipeline Script
+
+Paste this:
+pipeline {
+    agent any
+
+    stages {
+
+        stage('Clone GitHub Repo') {
+            steps {
+                git branch: 'main',
+                url: 'https://github.com/siddarth567/sids-destination.git'
+            }
+        }
+
+        stage('Build Docker Image') {
+            steps {
+                sh 'docker build -t sids:v2 .'
+            }
+        }
+
+        stage('Stop Old Container') {
+            steps {
+                sh 'docker rm -f sids_destination || true'
+            }
+        }
+
+        stage('Run New Container') {
+            steps {
+                sh 'docker run -d -p 80:80 --name sids_destination sids:v2'
+            }
+        }
+    }
+}
+
+✅ Save and Run
+
+Click:
+
+Save → Build Now
