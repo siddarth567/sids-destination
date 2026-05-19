@@ -107,8 +107,13 @@ New Item
 → Pipeline Script
 
 Paste this:
+
 pipeline {
     agent any
+
+    triggers {
+        githubPush()
+    }
 
     stages {
 
@@ -121,7 +126,7 @@ pipeline {
 
         stage('Build Docker Image') {
             steps {
-                sh 'docker build -t sids:v2 .'
+                sh 'docker build -t sids:v1 .'
             }
         }
 
@@ -133,7 +138,7 @@ pipeline {
 
         stage('Run New Container') {
             steps {
-                sh 'docker run -d -p 80:80 --name sids_destination sids:v2'
+                sh 'docker run -d -p 3200:80 --name sids_destination sids:v1'
             }
         }
     }
@@ -144,3 +149,23 @@ pipeline {
 Click:
 
 Save → Build Now
+
+to add webhooks (means auto trigger the pipeline do the below steps)
+
+configure the jenkins code 
+--> general
+--> pipeline syntax
+--->simple steps
+--->choose check out for version control
+---> add Repository URL
+---> add Credentials > global > username with passward > add github username and classic tocken here
+-->generate piple line script
+checkout scmGit(branches: [[name: '*/master']], extensions: [], userRemoteConfigs: [[credentialsId: 'sid', url: 'https://github.com/siddarth567/sids-destination.git']]) 
+--> this i have already added in my script
+
+in github 
+
+--> go to repository settings
+--> webhooks > add webhook > add your jenkins Payload URL > add webhook 
+--> you should see ✅ green right tick and somethink like this http://54.83.121.161:8080/github-webhook/ (push)
+--> edit you code jenkins pipleline will be auto triggered 
